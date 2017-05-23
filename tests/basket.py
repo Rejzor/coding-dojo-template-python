@@ -27,6 +27,8 @@ def basket(a,b,c,d,e):
 			cost1+=(int(3*8)*0.90)
 		elif zerocounter==3:
 			cost1+=(int(2*8)*0.95)
+		else:
+			cost1+=(8)
 		
 		#Decrement if not zero
 		for i in range(len(books)):
@@ -35,5 +37,5 @@ def basket(a,b,c,d,e):
 		zerocounter=0
 		sumbooks=sum(books)
 	return print(cost1)
-basket(2,2,2,2,2)
+basket(0,0,0,0,1)
 
