@@ -1,17 +1,10 @@
 class Basket():
 	pass
 
-def basket(a,b,c,d,e):	
-	books=[]
-	# cost1 = (int(sum(books))*8)*0.75
+def basket(*argv):	
+	books=[x for x in argv]
 	cost1=0
-
 	zerocounter=0
-	books.append(int(a))
-	books.append(int(b))
-	books.append(int(c))
-	books.append(int(d))
-	books.append(int(e))
 	sumbooks=sum(books)
 	while sumbooks > 0:
 		# How many zeros
